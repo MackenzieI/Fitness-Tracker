@@ -14,28 +14,31 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_g4v7s")
 
-[node name="TextEdit" type="TextEdit" parent="." unique_id=1247195943]
-layout_mode = 0
-offset_left = 493.0
-offset_top = 17.0
-offset_right = 622.0
-offset_bottom = 53.0
-text = "Fitness Tracker"
+[node name="VFlowContainer" type="VFlowContainer" parent="." unique_id=371168379]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -83.0
+offset_top = -51.0
+offset_right = 83.0
+offset_bottom = 51.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="CSButton" type="Button" parent="." unique_id=54015613]
-layout_mode = 0
-offset_left = 422.0
-offset_top = 90.0
-offset_right = 758.0
-offset_bottom = 227.0
+[node name="Label" type="Label" parent="VFlowContainer" unique_id=796960641]
+layout_mode = 2
+text = "Fitness Tracker"
+horizontal_alignment = 1
+
+[node name="CSButton" type="Button" parent="VFlowContainer" unique_id=54015613]
+layout_mode = 2
 text = "Charts and Statistics"
 script = ExtResource("1_fnlyl")
 
-[node name="IButton" type="Button" parent="." unique_id=1411711751]
-layout_mode = 0
-offset_left = 465.0
-offset_top = 273.0
-offset_right = 704.147
-offset_bottom = 370.66064
+[node name="IButton" type="Button" parent="VFlowContainer" unique_id=1411711751]
+layout_mode = 2
 text = "Input Info"
 script = ExtResource("2_pkhjh")
