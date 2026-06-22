@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c8jsncruao3xd"]
+
+[node name="InputInfo" type="Control" unique_id=1728802333]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextEdit" type="TextEdit" parent="." unique_id=1383306427]
+layout_mode = 0
+offset_left = 290.0
+offset_top = 19.0
+offset_right = 399.0
+offset_bottom = 61.0
+text = "Input Info"

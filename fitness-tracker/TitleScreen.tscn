@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://v404pect2m20"]
+
+[ext_resource type="Script" uid="uid://sc7v3vtg0u28" path="res://CsButton.cs" id="1_fnlyl"]
+[ext_resource type="Script" uid="uid://bcs2yay21p6t6" path="res://IButton.cs" id="2_pkhjh"]
+
+[sub_resource type="Theme" id="Theme_g4v7s"]
+
+[node name="Control" type="Control" unique_id=783859999]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_g4v7s")
+
+[node name="TextEdit" type="TextEdit" parent="." unique_id=1247195943]
+layout_mode = 0
+offset_left = 493.0
+offset_top = 17.0
+offset_right = 622.0
+offset_bottom = 53.0
+text = "Fitness Tracker"
+
+[node name="CSButton" type="Button" parent="." unique_id=54015613]
+layout_mode = 0
+offset_left = 422.0
+offset_top = 90.0
+offset_right = 758.0
+offset_bottom = 227.0
+text = "Charts and Statistics"
+script = ExtResource("1_fnlyl")
+
+[node name="IButton" type="Button" parent="." unique_id=1411711751]
+layout_mode = 0
+offset_left = 465.0
+offset_top = 273.0
+offset_right = 704.147
+offset_bottom = 370.66064
+text = "Input Info"
+script = ExtResource("2_pkhjh")
