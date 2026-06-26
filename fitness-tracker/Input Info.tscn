@@ -8,48 +8,81 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -108.0
-offset_top = 114.0
-offset_right = -108.0
-offset_bottom = 114.0
+offset_left = -1.0
+offset_top = 3.0
+offset_right = -1.0
+offset_bottom = 3.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TextEdit" type="TextEdit" parent="." unique_id=1383306427]
-layout_mode = 0
-offset_left = 290.0
-offset_top = 19.0
-offset_right = 399.0
-offset_bottom = 61.0
+[node name="VFlowContainer" type="VFlowContainer" parent="." unique_id=466312354]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -399.0
+offset_top = -304.0
+offset_right = 365.0
+offset_bottom = 304.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Header" type="Label" parent="VFlowContainer" unique_id=1605920743]
+custom_minimum_size = Vector2(10, 30)
+layout_mode = 2
 text = "Input Info"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="FlowContainer" type="FlowContainer" parent="." unique_id=376230227]
-layout_mode = 0
-offset_left = 140.0
-offset_top = 173.0
-offset_right = 731.0
-offset_bottom = 199.0
+[node name="BoxContainer" type="BoxContainer" parent="VFlowContainer" unique_id=430190857]
+layout_mode = 2
 
-[node name="CupWater" type="TextureButton" parent="FlowContainer" unique_id=30333750]
+[node name="CupWater" type="TextureButton" parent="VFlowContainer/BoxContainer" unique_id=30333750]
 custom_minimum_size = Vector2(25, 50)
 layout_mode = 2
 script = ExtResource("1_ahopf")
 
-[node name="TextureRect" type="TextureRect" parent="FlowContainer/CupWater" unique_id=561262032]
+[node name="TextureRect" type="TextureRect" parent="VFlowContainer/BoxContainer/CupWater" unique_id=561262032]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 25.0
+offset_bottom = 49.0
 texture = ExtResource("2_k6r6l")
+expand_mode = 1
+stretch_mode = 1
 
-[node name="WaterLabel" type="Label" parent="." unique_id=1159552611]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.13900001
-anchor_top = 0.49100003
-anchor_right = 0.13900001
-anchor_bottom = 0.49100003
-offset_left = -0.12802124
-offset_top = -0.16802979
-offset_right = 140.87198
-offset_bottom = 67.83197
+[node name="WaterLabel" type="Label" parent="VFlowContainer/BoxContainer" unique_id=1159552611]
+layout_mode = 2
 text = "Water today: 0"
+
+[node name="TextureButton2" type="TextureButton" parent="VFlowContainer/BoxContainer" unique_id=225020580]
+custom_minimum_size = Vector2(20, 20)
+custom_maximum_size = Vector2(-1, 20)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="VFlowContainer/BoxContainer/TextureButton2" unique_id=963480855]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 67.0
+offset_right = 44.0
+offset_bottom = 107.0
+texture = ExtResource("2_k6r6l")
+expand_mode = 4
+stretch_mode = 1
+
+[node name="TextureButton" type="TextureButton" parent="VFlowContainer/BoxContainer" unique_id=1361116496]
+custom_minimum_size = Vector2(20, 20)
+custom_maximum_size = Vector2(-1, 20)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="VFlowContainer/BoxContainer/TextureButton" unique_id=1911673845]
+layout_mode = 0
+offset_left = 83.0
+offset_top = 47.0
+offset_right = 123.0
+offset_bottom = 87.0
+texture = ExtResource("2_k6r6l")
+expand_mode = 4
+stretch_mode = 1
