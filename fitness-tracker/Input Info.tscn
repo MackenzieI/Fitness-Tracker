@@ -18,17 +18,13 @@ grow_vertical = 2
 
 [node name="VFlowContainer" type="VFlowContainer" parent="." unique_id=466312354]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = 5
 anchor_left = 0.5
-anchor_top = 0.5
 anchor_right = 0.5
-anchor_bottom = 0.5
 offset_left = -95.0
-offset_top = -303.0
 offset_right = 95.0
-offset_bottom = 303.0
+offset_bottom = 620.0
 grow_horizontal = 2
-grow_vertical = 2
 alignment = 1
 
 [node name="Header" type="Label" parent="VFlowContainer" unique_id=1605920743]
@@ -54,17 +50,20 @@ texture = ExtResource("2_k6r6l")
 expand_mode = 1
 stretch_mode = 1
 
-[node name="WaterLabel" type="Label" parent="VFlowContainer/BoxContainer" unique_id=1159552611]
+[node name="WaterLabel" type="Label" parent="VFlowContainer" unique_id=1159552611]
 layout_mode = 2
 text = "Water today: 0"
 
-[node name="ButtonUp" type="TextureButton" parent="VFlowContainer/BoxContainer" unique_id=225020580]
+[node name="HFlowContainer" type="HFlowContainer" parent="VFlowContainer" unique_id=2097238285]
+layout_mode = 2
+
+[node name="ButtonUp" type="TextureButton" parent="VFlowContainer/HFlowContainer" unique_id=225020580]
 custom_minimum_size = Vector2(20, 20)
 custom_maximum_size = Vector2(-1, 20)
 layout_mode = 2
 script = ExtResource("3_xu0he")
 
-[node name="TextureRect" type="TextureRect" parent="VFlowContainer/BoxContainer/ButtonUp" unique_id=963480855]
+[node name="TextureRect" type="TextureRect" parent="VFlowContainer/HFlowContainer/ButtonUp" unique_id=963480855]
 layout_mode = 0
 offset_left = -2.0
 offset_top = -2.0
@@ -74,12 +73,12 @@ texture = ExtResource("2_k6r6l")
 expand_mode = 4
 stretch_mode = 1
 
-[node name="ButtonDown" type="TextureButton" parent="VFlowContainer/BoxContainer" unique_id=1361116496]
+[node name="ButtonDown" type="TextureButton" parent="VFlowContainer/HFlowContainer" unique_id=1361116496]
 custom_minimum_size = Vector2(20, 20)
 custom_maximum_size = Vector2(-1, 20)
 layout_mode = 2
 
-[node name="TextureRect" type="TextureRect" parent="VFlowContainer/BoxContainer/ButtonDown" unique_id=1911673845]
+[node name="TextureRect" type="TextureRect" parent="VFlowContainer/HFlowContainer/ButtonDown" unique_id=1911673845]
 layout_mode = 0
 offset_left = -1.0
 offset_top = -1.0
